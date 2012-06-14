@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+# hg-shell, the Mercurial version control system's git-shell.
+#
+# @par License:
+# Copyleft (c) 2012 Will Zhou
+#
+# @author Will Zhou <willzhou@live.com>
+#
+# @par Disclaimer:
+# Any one who uses this code does so completely at their own risk.
+# The author doesn't warrant that this code does anything at all
+# but if it does something and you don't like it, then he is not
+# responsible.
+
+import sys
+import os
+
+os.environ['PATH'] = '/usr/local/bin:/usr/bin'
+
+cmd = ' '.join(sys.argv[2:])
+
+if cmd.startswith('hg '):
+	os.system(cmd)
+else:
+	sys.stderr.write("fatal: She grasps that she is Mercurial the Spectre--and that all of her Haunts are but shadows of the one true Spectre.\n")
+	sys.exit(1)
