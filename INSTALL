@@ -1,5 +1,1 @@
-1. copy src/hg-shell to /usr/bin
-2. chmod +x /usr/bin/hg-shell
-3. modify your /etc/passwd file, and change /bin/bash to /usr/bin/hg-shell
-4. enjoy it. 
-hg clone ssh://user@your-host-name/your-mercurial-repository
+please read README.md
